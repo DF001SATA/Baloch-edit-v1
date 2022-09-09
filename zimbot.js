@@ -1,6 +1,4 @@
-
-
-process.on('uncaughtException', console.error) //Safe Log Error
+rocess.on('uncaughtException', console.error) //Safe Log Error
 
 require('./config')
 const { WAConnection, MessageType , BufferJSON, WA_DEFAULT_EPHEMERAL, PresenceUpdate, Presence, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } = require('@adiwajshing/baileys')
@@ -39,9 +37,9 @@ const setting = JSON.parse(fs.readFileSync('./apikey.json'))
 
 //buat info zvibhorani zivi
 limitawal = '100'
-botname = 'BALOCH EDIT'
-wm = 'BALOCH EDIT'
-global.reactmoji = '🕊'
+botname = 'SATA'
+wm = 'SATA'
+global.reactmoji = '⚡'
 limitCount = setting.limit
 
 //read database
@@ -369,7 +367,7 @@ randek = jsonDrips[randIndex];
                 if (!('wame' in chats)) chats.wame = false
                 if (!('antitwitter' in chats)) chats.antitwitter = false
             } else global.db.data.chats[m.chat] = {
-                mute: false,
+                mute: true,
                 wame: false,
                 antilink: false,
                 antilinkyt: false,
@@ -2609,8 +2607,8 @@ let drips = [
                     await sleep(1500)
 		            let btn = [{
           urlButton: {
-                  displayText: '🥀گیت‌هاب😈',
-                  url: 'https://github.com/BalochEdit'
+                  displayText: 'گروه پشتیبانی ',
+                  url: 'https://chat.whatsapp.com/HWUyQZfZaIaEp7TN1rqLsx'
           }
                             }]
                       let txt = `「 *BALOCHEDIT* 」\n\n${text}`
@@ -2628,11 +2626,11 @@ let drips = [
 		    await sleep(1500)
 		    let btn = [{
           urlButton: {
-                  displayText: '🥀گیت‌هاب😈',
-                  url: 'https://github.com/BalochEdit'
+                  displayText: 'پشتیبانی',
+                  url: ''https://chat.whatsapp.com/HWUyQZfZaIaEp7TN1rqLsx
           }
                             }]
-                      let txt = `「 *ZIMBOT BROADCAST* 」\n\n${text}`
+                      let txt = `「 *BOT BROADCAST* 」\n\n${text}`
                       ZimBotInc.send5ButImg(yoi, txt, botname, global.bc, btn)
 		}
 		m.reply('*Success Broadcast*')
@@ -2661,8 +2659,8 @@ case 'bcimage': case 'bcvideo': case 'bcaudio': {
                     await sleep(1500)
                     let butoon = [{
           urlButton: {
-                  displayText: `🥀گیت‌هاب😈`,
-                  url: 'https://github.com/BalochEdit'
+                  displayText: `گروه پشتیبانی`,
+                  url: 'https://chat.whatsapp.com/HWUyQZfZaIaEp7TN1rqLsx'
           }
                             },
                             {
@@ -3589,7 +3587,7 @@ case 'play': {
                 let anu = search.videos[Math.floor(Math.random() * search.videos.length)]
                 let buf = await getBuffer(anu.thumbnail)
                 let caption = `
-*▊▊▊موسیقی‌بیست‌▊▊▊*
+*▊▊▊موسیقی‌▊▊▊*
 
 *⬤▶━━━━━━━━━2:30*
 *⬤TITLE :* ${anu.title}
@@ -3606,27 +3604,27 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             hydratedFooterText: `${botname}`,
                             hydratedButtons: [{
           urlButton: {
-                  displayText: '😈لینک‌یوتیوبی🥀',
+                  displayText: 'لینک‌یوتیوبی',
                   url: `${anu.url}`
           }
                             }, {
                             	urlButton: {
-          displayText: `🥀گیت‌هاب😈`, 
-                  url: `https://github.com/BalochEdit`
+          displayText: `پشتیبانی`,
+                  url: `http://wa.me/989175142780`
           }
                             }, {
           quickReplyButton: {
-                  displayText: `🥀ویدیو😈`,
+                  displayText: `ویدیو`,
                   id: `${prefix}ytmp4 ${anu.url}`
           }
           }, {
           quickReplyButton: {
-                  displayText: `🥀آهنگ😈`,
+                  displayText: `آهنگ`,
                   id: `${prefix}ytmp3 ${anu.url}`
           }
           }, {
           quickReplyButton: {
-                  displayText: `😈سرچ‌یوتیوب🥀`,
+                  displayText: `سرچ‌یوتیوب`,
                   id: `${prefix}ytsearch ${anu.title}`
           }
                             }]
@@ -3671,27 +3669,27 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             hydratedFooterText: `${botname}`,
                             hydratedButtons: [{
           urlButton: {
-                  displayText: '😈لینک‌ویدیو🥀',
+                  displayText: 'لینک‌ویدیو',
                   url: `${aramas.videos[0].url}`
           }
                             }, {
                             	urlButton: {
-          displayText: `🥀گیت‌هاب😈`, 
-                  url: `https://github.com/BalochEdit`
+          displayText: `پشتیبانی گروه`, 
+                  url: `https://chat.whatsapp.com/HWUyQZfZaIaEp7TN1rqLsx`
           }
                             }, {
           quickReplyButton: {
-                  displayText: `🥀ویدیو😈`,
+                  displayText: `ویدیو`,
                   id: `${prefix}ytmp4 ${aramas.videos[0].url}`
           }
           }, {
           quickReplyButton: {
-                  displayText: `🥀آهنگ😈`,
+                  displayText: `آهنگ`,
                   id: `${prefix}ytmp3 ${aramas.videos[0].url}`
           }
           }, {
           quickReplyButton: {
-                  displayText: `😈سرچ‌یوتیوب🥀`,
+                  displayText: `سرچ‌یوتیوب`,
                   id: `${prefix}ytsearch ${aramas.videos[0].title}`
           }
                             }]
@@ -3722,7 +3720,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 ZimBotInc.sendMessage(m.chat, { image: { url: media.thumb }, jpegThumbnail:buf, caption: `${caption}` }, { quoted: m }).catch((err) => m.reply('*Sorry, the link you provided is not valid*'))                
                 ZimBotInc.sendMessage(m.chat, {document:{url:media.dl_link}, mimetype:"audio/mpeg", fileName: `${media.title}.mp3`,  quoted: m, contextInfo: { externalAdReply:{
                 title:media.title,
-                body:"😈موزیک‌یوتیوب🥀",
+                body:"موزیک‌یوتیوب",
                 mediaType:2,
                 thumbnail:buf,
                 mediaUrl:`${text}`, 
@@ -3833,7 +3831,7 @@ if (isBan) throw mess.ban
                 let buttonMessage = {
                     image: { url: result },         
                     jpegThumbnail: log,         
-                    caption: `*🥀کلیک‌گزینه‌های‌بیشتر😈*`,
+                    caption: `کلیک‌گزینه‌های‌بیشتر✈`,
                     footer: botname,
                     buttons: buttons,
                     headerType: 4
@@ -4902,13 +4900,13 @@ hydratedContentText: listmn,
 hydratedFooterText: `${botname}`,
 hydratedButtons: [{
 urlButton: {
-displayText: '😈ساب‌چنل🥀',
-url: 'https://youtube.com/channel/UCIdvdgFwdssFC0Nxx9Xk1dQ'
+displayText: 'گروه پشتیبانی',
+url: 'https://chat.whatsapp.com/HWUyQZfZaIaEp7TN1rqLsx'
 }
 }, {
 urlButton: {
-displayText: '🥀گیت‌هاب😈',
-url: 'https://github.com/BalochEdit'
+displayText: 'پشتیبانی ربات',
+url: 'https://wa.wa.me/989175142780'
 }
 }, {
 quickReplyButton: {
@@ -4917,7 +4915,7 @@ id: 'ping'
 }
 }, {
 quickReplyButton: {
-displayText: '😈سازنده🥀',
+displayText: 'سازنده',
 id: 'owner'
 }  
 }, {
@@ -5005,13 +5003,13 @@ hydratedContentText: caption,
 hydratedFooterText: `${botname}`,
 hydratedButtons: [{
 urlButton: {
-displayText: '🕊لینک😈',
+displayText: 'لینک⚡',
 url: `${text}`
 }
 }, {
 urlButton: {
-displayText: '🥀گیت‌هاب😈',
-url: 'https://github.com/BalochEdit'
+displayText: 'پشتیبانی',
+url: 'wa.me/989175142780'
 }
 }, {
 quickReplyButton: {
@@ -5394,7 +5392,7 @@ case 'savefrom': {
 
        title: "**▊▊▊SAVEFROM DL▊▊▊**",
 
-       buttonText: "🥀کلیک بر روی لیست‌ها😈",
+       buttonText: "کلیک بر روی لیست‌ها",
 
        sections
 
@@ -5853,7 +5851,7 @@ case 'resep': case 'resepmasakan': {
        text: `*Results of*  ${text}`,
        footer: botname,
        title: "[ Recipes ]",
-       buttonText: "🥀کلیک بر روی لیست‌ها😈",
+       buttonText: "کلیک بر روی لیست‌ها",
        sections
       }, { quoted : m })
 }
@@ -5908,7 +5906,7 @@ case 'apk': case 'apkmod': case 'apkdl': {
        text: `${ucapannya2} ${pushname} *Search Results From ${text} Click the button below to choose*`,
        footer: `© BALOCH EDIT`,
        title: "*▊▊▊APK DOWNLOAD▊▊▊*",
-       buttonText: "🥀کلیک بر روی لیست‌ها😈",
+       buttonText: "کلیک بر روی لیست‌ها",
        sections
       }, { quoted : m })                 
                 }).catch((err) => {
@@ -6783,7 +6781,7 @@ let sections = []
 
        title: "*▊▊▊ANIME▊▊▊*",
 
-       buttonText: "🥀کلیک بر روی لیست‌ها😈",
+       buttonText: "کلیک بر روی لیست‌ها",
 
        sections
 
@@ -6803,7 +6801,7 @@ ZimBotInc.sendMessage(m.chat, { image : { url : res.data.images.jpg.image_url}, 
 }
 break
 
-//by BALOCH EDIT
+//by sata
 
 case 'listmenu': case 'لیست': case 'list': {
     
