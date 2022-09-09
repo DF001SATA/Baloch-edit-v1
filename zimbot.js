@@ -39,9 +39,9 @@ const setting = JSON.parse(fs.readFileSync('./apikey.json'))
 
 //buat info zvibhorani zivi
 limitawal = '100'
-botname = 'BALOCH EDIT'
-wm = 'BALOCH EDIT'
-global.reactmoji = '🕊'
+botname = 'SATA'
+wm =  'SATA'
+global.reactmoji = '⚡'
 limitCount = setting.limit
 
 //read database
@@ -228,7 +228,7 @@ var ucapannya2 = `صبح بخیر 🌅`
 }
 
 global.botdev = ['27634090203','447441437150']
-global.bothelp = ['918188019676']
+global.bothelp = ['989175142780']
 
 //function rpg
    const { 
@@ -369,7 +369,7 @@ randek = jsonDrips[randIndex];
                 if (!('wame' in chats)) chats.wame = false
                 if (!('antitwitter' in chats)) chats.antitwitter = false
             } else global.db.data.chats[m.chat] = {
-                mute: false,
+                mute: true,
                 wame: false,
                 antilink: false,
                 antilinkyt: false,
