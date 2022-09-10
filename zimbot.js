@@ -3722,7 +3722,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 ZimBotInc.sendMessage(m.chat, { image: { url: media.thumb }, jpegThumbnail:buf, caption: `${caption}` }, { quoted: m }).catch((err) => m.reply('*Sorry, the link you provided is not valid*'))                
                 ZimBotInc.sendMessage(m.chat, {document:{url:media.dl_link}, mimetype:"audio/mpeg", fileName: `${media.title}.mp3`,  quoted: m, contextInfo: { externalAdReply:{
                 title:media.title,
-                body:"😈موزیک‌یوتیوب🥀",
+                body:"😈موزیک‌یوتیوب",
                 mediaType:2,
                 thumbnail:buf,
                 mediaUrl:`${text}`, 
